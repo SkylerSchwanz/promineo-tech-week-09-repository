@@ -1,0 +1,20 @@
+html, body{
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+main {
+    height: 100vh;
+}
+
+#cards {
+    gap: 3rem;
+}
+
+#cards .card {
+    width: 18rem;
+}
+
+.contact-form {
+    height: fit-content;
+}

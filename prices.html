@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Sets the compatibility mode for Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configures the viewport settings for responsive design -->
+    <link type="text/css" rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <!-- Imports the Bootstrap CSS framework -->
+    <link type="text/css" rel="stylesheet" href="./styles.css" />
+    <!-- Imports a custom CSS file -->
+    <title>Week 9 Project | Skyler Schwanz</title>
+    <!-- Sets the title of the webpage -->
+  </head>
+
+  <body>
+    <header>
+      <!-- Navigation bar -->
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Skyler's Mechanic Shop</a>
+
+        <!-- Collapsible button for small screens -->
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample01"
+          aria-controls="navbarsExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Collapsible navigation links -->
+        <div class="navbar-collapse collapse" id="navbarsExample01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./prices.html">Prices<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <div class="row d-flex flex-column justify-content-center">
+          <div class="col">
+            <h2>Part List</h2>
+          </div>
+
+          <!-- Table displaying part prices, names, and quality -->
+          <table class="col table">
+            <thead>
+              <tr>
+                <th scope="col">Price</th>
+                <th scope="col">Part</th>
+                <th scope="col">Quality</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">$250</th>
+                <td>Alternator</td>
+                <td>New</td>
+                <td><div class="btn btn-info rounded-pill">Purchase</div></td>
+              </tr>
+              <tr>
+                <th scope="row">$125</th>
+                <td>Battery</td>
+                <td>Used</td>
+                <td><div class="btn btn-info rounded-pill">Purchase</div></td>
+              </tr>
+              <tr>
+                <th scope="row">$85</th>
+                <td>Brake Pads</td>
+                <td>Used</td>
+                <td><div class="btn btn-info rounded-pill">Purchase</div></td>
+              </tr>
+              <tr>
+                <th scope="row">$20</th>
+                <td>Cabin Air Filter</td>
+                <td>New</td>
+                <td><div class="btn btn-info rounded-pill">Purchase</div></td>
+              </tr>
+              <tr>
+                <th scope="row">$35</th>
+                <td>Spark Plugs</td>
+                <td>New</td>
+                <td><div class="btn btn-info rounded-pill">Purchase</div></td>
+              </tr>
+              <tr>
+                <th scope="row">$12.95</th>
+                <td>Wiper blades</td>
+                <td>Used</td>
+                <td><div class="btn btn-info rounded-pill">Purchase</div></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </main>
+
+    <!-- JavaScript dependencies: jQuery and Bootstrap bundle -->
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Sets the compatibility mode for Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configures the viewport settings for responsive design -->
+    <link type="text/css" rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <!-- Imports the Bootstrap CSS framework -->
+    <link type="text/css" rel="stylesheet" href="./styles.css" />
+    <!-- Imports a custom CSS file -->
+    <title>Week 9 Project | Skyler Schwanz</title>
+    <!-- Sets the title of the webpage -->
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Skyler's Mechanic Shop</a>
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample01"
+          aria-controls="navbarsExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample01">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./prices.html">Prices</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="./contact.html">Contact<span class="sr-only">(current)</span></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="d-flex"> <!-- Creates a flex container for main content -->
+      <div id="contact-form" class="container align-self-center"> <!-- Sets a container with self-alignment -->
+        <div class="row no-gutters"> <!-- Creates a row without gutters -->
+          <div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch"> <!-- Sets a column with flex layout -->
+            <div class="contact-wrap w-100 p-md-5 p-4"> <!-- Creates a contact form wrapper -->
+              <h3 class="mb-4">Get in touch</h3> <!-- Displays a heading for the contact form -->
+              <form method="POST" id="contactForm" name="contactForm" class="contactForm" novalidate="novalidate"> <!-- Creates a form -->
+                <div class="row"> <!-- Creates a row for form elements -->
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="label" for="name">Full Name</label> <!-- Displays a label for the name input -->
+                      <input type="text" class="form-control" name="name" id="name" placeholder="Name" /> <!-- Creates a text input for name -->
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label class="label" for="email">Email Address</label> <!-- Displays a label for the email input -->
+                      <input type="email" class="form-control" name="email" id="email" placeholder="Email" /> <!-- Creates an email input -->
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="label" for="subject">Subject</label> <!-- Displays a label for the subject input -->
+                      <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" /> <!-- Creates a text input for subject -->
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <label class="label" for="#">Message</label> <!-- Displays a label for the message textarea -->
+                      <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea> <!-- Creates a textarea for message -->
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <input type="submit" value="Send Message" class="btn btn-primary" /> <!-- Creates a submit button for sending the message -->
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-5 d-flex align-items-stretch"> <!-- Sets a column with flex layout -->
+            <div class="bg-dark rounded w-100 p-md-5 p-4"> <!-- Creates a rounded container with a dark background -->
+              <h3 class="text-white">Let's get in touch</h3> <!-- Displays a heading for getting in touch -->
+              <p class="mb-4 text-white">If you have any questions or concerns about our products or services, give us a message!</p> <!-- Provides information about contacting the shop -->
+              <div class="dbox w-100 d-flex align-items-start"> <!-- Creates a box for address information -->
+                <div class="text pl-3">
+                  <p class="text-white"><span>Address:</span> 123 Main Street, Suite 811 New Jersey NJ 10016</p> <!-- Displays the shop's address -->
+                </div>
+              </div>
+              <div class="dbox w-100 d-flex align-items-center"> <!-- Creates a box for phone number information -->
+                <div class="pl-3">
+                  <p class="text-white"><span>Phone:</span> <a class="text-info" href="tel://1234567890">+ 123 456 7890</a></p> <!-- Displays the shop's phone number -->
+                </div>
+              </div>
+              <div class="dbox w-100 d-flex align-items-center"> <!-- Creates a box for email information -->
+                <div class="pl-3">
+                  <p class="text-white"><span>Email:</span> <a class="text-info" href="mailto:my@exampleEmail.com">my@exampleEmail.com</a></p> <!-- Displays the shop's email address -->
+                </div>
+              </div>
+              <div class="w-100 d-flex align-items-center"> <!-- Creates a box for website information -->
+                <div class="pl-3">
+                  <p class="text-white"><span>Website</span> <a class="text-info" href="#">SkylersMechanicShop.com</a></p> <!-- Displays the shop's website URL -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+  </body>
+</html>

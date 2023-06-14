@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Specifies the character encoding for the document -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Sets the compatibility mode for Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Configures the viewport settings for responsive design -->
+    <link type="text/css" rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css" />
+    <!-- Imports the Bootstrap CSS framework -->
+    <link type="text/css" rel="stylesheet" href="./styles.css" />
+    <!-- Imports a custom CSS file -->
+    <title>Week 9 Project | Skyler Schwanz</title>
+    <!-- Sets the title of the webpage -->
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar navbar-dark bg-dark">
+        <!-- Creates a dark-themed navigation bar -->
+        <a class="navbar-brand" href="#">Skyler's Mechanic Shop</a>
+        <!-- Displays the branding text and links it to the homepage -->
+        <button
+          class="navbar-toggler collapsed"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarsExample01"
+          aria-controls="navbarsExample01"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <!-- Creates a collapsed navbar toggler button for mobile devices -->
+          <span class="navbar-toggler-icon"></span>
+          <!-- Displays an icon for the navbar toggler button -->
+        </button>
+
+        <div class="navbar-collapse collapse" id="navbarsExample01">
+          <!-- Creates a collapsible navbar content -->
+          <ul class="navbar-nav mr-auto">
+            <!-- Creates an unordered list for the navbar items -->
+            <li class="nav-item active">
+              <!-- Adds an active class to the first navbar item -->
+              <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+              <!-- Adds a link to the homepage -->
+            </li>
+            <li class="nav-item">
+              <!-- Creates a navbar item -->
+              <a class="nav-link" href="./prices.html">Prices</a>
+              <!-- Adds a link to the prices page -->
+            </li>
+            <li class="nav-item">
+              <!-- Creates a navbar item -->
+              <a class="nav-link" href="./contact.html">Contact</a>
+              <!-- Adds a link to the contact page -->
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="container-fluid">
+      <!-- Creates the main content container with fluid layout -->
+      <div class="row mt-5 justify-content-center">
+        <!-- Creates a row with centered content -->
+        <div class="col-auto"><img class="img-thumbnail float-left" src="./images/mechanic.jpg" /></div>
+        <!-- Displays an image of a mechanic -->
+
+        <div class="col-5 d-flex flex-column justify-content-between">
+          <!-- Creates a column with a flex layout -->
+          <p>
+            Welcome to Skyler's Mechanic Shop, your one-stop destination for all your car needs. Whether you need a wheel alignment, a brake service, a
+            suspension repair, or anything else related to your precious vehicle, we have the skills and experience to get the job done right.
+          </p>
+
+          <p>
+            At Skyler's Mechanic Shop, we value quality, honesty, and customer satisfaction. We use only the best parts and tools for our services, and we
+            always give you a fair and transparent estimate before we start working on your car. We also offer a 12-month warranty on all our work, so you can
+            rest assured that your car is in good hands.
+          </p>
+
+          <p>
+            We are conveniently located at 123 Main Street, and we are open from Monday to Friday, 8 am to 6 pm. You can book an appointment online or call us
+            at (555) 555-5555. We also accept walk-ins, but we recommend making a reservation to avoid waiting.
+          </p>
+
+          <p>Thank you for choosing Skyler's Mechanic Shop. We look forward to serving you and your car soon!</p>
+        </div>
+      </div>
+
+      <div class="row d-flex flex-column justify-content-center">
+        <!-- Creates a row with a flex column layout -->
+        <div class="text-center">
+          <!-- Aligns the text in the center -->
+          <h2>Customer Testinomy</h2>
+          <!-- Displays a heading for customer testimonials -->
+        </div>
+
+        <div id="cards" class="row justify-content-center">
+          <!-- Creates a row with centered content for testimonials -->
+          <div class="card">
+            <!-- Creates a card element for each testimonial -->
+            <img class="card-img-top" src="./images/anonymous.jpeg" alt="Anonymous Person Image" />
+            <!-- Displays an image of an anonymous person -->
+            <div class="card-body">
+              <h5 class="card-title">John Doe</h5>
+              <!-- Displays the name of the customer -->
+              <p class="card-text">
+                "I've been a customer of Skyler's Mechanic Shop for years and I've always been happy with their service. They're honest, reliable, and
+                affordable."
+              </p>
+              <!-- Displays the testimonial text for the customer -->
+            </div>
+          </div>
+
+          <div class="card">
+            <!-- Creates another card element for a different testimonial -->
+            <img class="card-img-top" src="./images/anonymous.jpeg" alt="Anonymous Person Image" />
+            <!-- Displays an image of an anonymous person -->
+            <div class="card-body">
+              <h5 class="card-title">Jane Doe</h5>
+              <!-- Displays the name of the customer -->
+              <p class="card-text">
+                "I brought my car to Skyler's Mechanic Shop for a tune-up and they found a few problems that needed to be fixed. I was very happy with the
+                service."
+              </p>
+              <!-- Displays the testimonial text for the customer -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <!-- Imports the jQuery library -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <!-- Imports the Bootstrap JavaScript bundle -->
+  </body>
+</html>
